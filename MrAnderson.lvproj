@@ -12,6 +12,7 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="convertVecToArray.vi" Type="VI" URL="../convertVecToArray.vi"/>
 		<Item Name="displayData.vi" Type="VI" URL="../displayData.vi"/>
+		<Item Name="prepDataForDisplay.vi" Type="VI" URL="../prepDataForDisplay.vi"/>
 		<Item Name="readData.vi" Type="VI" URL="../readData.vi"/>
 		<Item Name="stackErrorSimpleMulti.vi" Type="VI" URL="../stackErrorSimpleMulti.vi"/>
 		<Item Name="theOne.vi" Type="VI" URL="../theOne.vi"/>
