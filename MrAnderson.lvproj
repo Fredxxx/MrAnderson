@@ -25,14 +25,13 @@
 		<Item Name="conDisCon.vi" Type="VI" URL="../conDisCon.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
-				<Item Name="er4commlib_labview.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4commlib_labview/er4commlib_labview.lvlib"/>
+				<Item Name="er4commlib_labview_V3.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4commlib_labview_V3/er4commlib_labview_V3.lvlib"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 			</Item>
-			<Item Name="er4commlib_labview.dll" Type="Document" URL="../../er4_labview_to_share/labview_to_share/er4commlib_labview.dll"/>
-			<Item Name="testGenData.vi" Type="VI" URL="../testGenData.vi"/>
+			<Item Name="er4commlib_labview.dll" Type="Document" URL="../../labview_to_share_V3/er4commlib_labview.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
