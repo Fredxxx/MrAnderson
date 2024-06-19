@@ -13,7 +13,7 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="converters" Type="Folder">
 			<Item Name="convertVecToArray.vi" Type="VI" URL="../convertVecToArray.vi"/>
-			<Item Name="prefixConversion.vi" Type="VI" URL="../prefixConversion.vi"/>
+			<Item Name="unitToPrefix.vi" Type="VI" URL="../unitToPrefix.vi"/>
 			<Item Name="convertErrorIntToText.vi" Type="VI" URL="../convertErrorIntToText.vi"/>
 		</Item>
 		<Item Name="helpers" Type="Folder">
@@ -23,6 +23,7 @@
 		<Item Name="theOne.vi" Type="VI" URL="../theOne.vi"/>
 		<Item Name="getDevicePara.vi" Type="VI" URL="../getDevicePara.vi"/>
 		<Item Name="conDisCon.vi" Type="VI" URL="../conDisCon.vi"/>
+		<Item Name="testy.vi" Type="VI" URL="/&lt;userlib&gt;/er4commlib_labview_V3/VIs/testy.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="er4commlib_labview_V3.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4commlib_labview_V3/er4commlib_labview_V3.lvlib"/>
