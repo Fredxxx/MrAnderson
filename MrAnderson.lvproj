@@ -22,7 +22,6 @@
 		</Item>
 		<Item Name="theOne.vi" Type="VI" URL="../theOne.vi"/>
 		<Item Name="getDevicePara.vi" Type="VI" URL="../getDevicePara.vi"/>
-		<Item Name="simpleConnDisconn.vi" Type="VI" URL="../../testy/labview_to_share/labview_to_share/include/simpleConnDisconn.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="er4commlib_labview.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4commlib_labview/er4commlib_labview.lvlib"/>
