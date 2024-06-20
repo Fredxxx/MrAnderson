@@ -24,6 +24,7 @@
 		<Item Name="getDevicePara.vi" Type="VI" URL="../getDevicePara.vi"/>
 		<Item Name="conDisCon.vi" Type="VI" URL="../conDisCon.vi"/>
 		<Item Name="testy.vi" Type="VI" URL="/&lt;userlib&gt;/er4commlib_labview_V3/VIs/testy.vi"/>
+		<Item Name="setDevicePara.vi" Type="VI" URL="../setDevicePara.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="er4commlib_labview_V3.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4commlib_labview_V3/er4commlib_labview_V3.lvlib"/>
