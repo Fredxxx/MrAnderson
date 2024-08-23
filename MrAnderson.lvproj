@@ -23,9 +23,9 @@
 		<Item Name="theOne.vi" Type="VI" URL="../theOne.vi"/>
 		<Item Name="getDevicePara.vi" Type="VI" URL="../getDevicePara.vi"/>
 		<Item Name="conDisCon.vi" Type="VI" URL="../conDisCon.vi"/>
-		<Item Name="testy.vi" Type="VI" URL="/&lt;userlib&gt;/er4commlib_labview_V3/VIs/testy.vi"/>
 		<Item Name="setDevicePara.vi" Type="VI" URL="../setDevicePara.vi"/>
 		<Item Name="createInitArray.vi" Type="VI" URL="../createInitArray.vi"/>
+		<Item Name="testy.vi" Type="VI" URL="../testy.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="er4commlib_labview.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4commlib_labview/er4commlib_labview.lvlib"/>
@@ -33,6 +33,12 @@
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="Read JPEG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Read JPEG File.vi"/>
+				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
+				<Item Name="Check Path.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check Path.vi"/>
+				<Item Name="Directory of Top Level VI.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Directory of Top Level VI.vi"/>
+				<Item Name="Draw Flattened Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Flattened Pixmap.vi"/>
+				<Item Name="FixBadRect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/FixBadRect.vi"/>
 			</Item>
 			<Item Name="er4commlib_labview.dll" Type="Document" URL="../../labview_to_share_V3/er4commlib_labview.dll"/>
 		</Item>
