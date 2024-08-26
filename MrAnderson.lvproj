@@ -26,6 +26,8 @@
 		<Item Name="setDevicePara.vi" Type="VI" URL="../setDevicePara.vi"/>
 		<Item Name="createInitArray.vi" Type="VI" URL="../createInitArray.vi"/>
 		<Item Name="minExampleReadDataPackage.vi" Type="VI" URL="../minExampleReadDataPackage.vi"/>
+		<Item Name="stateMachnieEx.vi" Type="VI" URL="../stateMachnieEx.vi"/>
+		<Item Name="readData.vi" Type="VI" URL="../readData.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="er4commlib_labview.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4commlib_labview/er4commlib_labview.lvlib"/>
@@ -41,6 +43,7 @@
 				<Item Name="FixBadRect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/FixBadRect.vi"/>
 			</Item>
 			<Item Name="er4commlib_labview.dll" Type="Document" URL="../../labview_to_share_V3/er4commlib_labview.dll"/>
+			<Item Name="State Machine Fundamentals - State Enum.ctl" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2021/examples/Design Patterns/State Machine/support/State Machine Fundamentals - State Enum.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
