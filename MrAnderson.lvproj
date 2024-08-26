@@ -25,7 +25,7 @@
 		<Item Name="conDisCon.vi" Type="VI" URL="../conDisCon.vi"/>
 		<Item Name="setDevicePara.vi" Type="VI" URL="../setDevicePara.vi"/>
 		<Item Name="createInitArray.vi" Type="VI" URL="../createInitArray.vi"/>
-		<Item Name="testy.vi" Type="VI" URL="../testy.vi"/>
+		<Item Name="minExampleReadDataPackage.vi" Type="VI" URL="../minExampleReadDataPackage.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="er4commlib_labview.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4commlib_labview/er4commlib_labview.lvlib"/>
