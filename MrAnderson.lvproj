@@ -20,7 +20,7 @@
 			<Item Name="stackErrorSimpleMulti.vi" Type="VI" URL="../stackErrorSimpleMulti.vi"/>
 			<Item Name="prepDataForDisplay.vi" Type="VI" URL="../prepDataForDisplay.vi"/>
 		</Item>
-		<Item Name="theOne.vi" Type="VI" URL="../theOne.vi"/>
+		<Item Name="theOne_V2.vi" Type="VI" URL="../theOne_V2.vi"/>
 		<Item Name="getDevicePara.vi" Type="VI" URL="../getDevicePara.vi"/>
 		<Item Name="conDisCon.vi" Type="VI" URL="../conDisCon.vi"/>
 		<Item Name="setDevicePara.vi" Type="VI" URL="../setDevicePara.vi"/>
