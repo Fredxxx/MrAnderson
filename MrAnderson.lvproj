@@ -27,6 +27,7 @@
 		<Item Name="createInitArray.vi" Type="VI" URL="../createInitArray.vi"/>
 		<Item Name="minExampleReadDataPackage.vi" Type="VI" URL="../minExampleReadDataPackage.vi"/>
 		<Item Name="readData.vi" Type="VI" URL="../readData.vi"/>
+		<Item Name="channelSort.vi" Type="VI" URL="../channelSort.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="er4commlib_labview.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4commlib_labview/er4commlib_labview.lvlib"/>
