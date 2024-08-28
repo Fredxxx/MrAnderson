@@ -19,15 +19,17 @@
 		<Item Name="helpers" Type="Folder">
 			<Item Name="stackErrorSimpleMulti.vi" Type="VI" URL="../stackErrorSimpleMulti.vi"/>
 			<Item Name="prepDataForDisplay.vi" Type="VI" URL="../prepDataForDisplay.vi"/>
+			<Item Name="channelSort.vi" Type="VI" URL="../channelSort.vi"/>
+			<Item Name="readData.vi" Type="VI" URL="../readData.vi"/>
+			<Item Name="getDevicePara.vi" Type="VI" URL="../getDevicePara.vi"/>
+			<Item Name="setDevicePara.vi" Type="VI" URL="../setDevicePara.vi"/>
+		</Item>
+		<Item Name="test" Type="Folder">
+			<Item Name="conDisCon.vi" Type="VI" URL="../conDisCon.vi"/>
+			<Item Name="minExampleReadDataPackage.vi" Type="VI" URL="../minExampleReadDataPackage.vi"/>
+			<Item Name="testy.vi" Type="VI" URL="../testy.vi"/>
 		</Item>
 		<Item Name="theOne_V2.vi" Type="VI" URL="../theOne_V2.vi"/>
-		<Item Name="getDevicePara.vi" Type="VI" URL="../getDevicePara.vi"/>
-		<Item Name="conDisCon.vi" Type="VI" URL="../conDisCon.vi"/>
-		<Item Name="setDevicePara.vi" Type="VI" URL="../setDevicePara.vi"/>
-		<Item Name="createInitArray.vi" Type="VI" URL="../createInitArray.vi"/>
-		<Item Name="minExampleReadDataPackage.vi" Type="VI" URL="../minExampleReadDataPackage.vi"/>
-		<Item Name="readData.vi" Type="VI" URL="../readData.vi"/>
-		<Item Name="channelSort.vi" Type="VI" URL="../channelSort.vi"/>
 		<Item Name="theOne_V3.vi" Type="VI" URL="../theOne_V3.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
@@ -42,6 +44,9 @@
 				<Item Name="Directory of Top Level VI.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Directory of Top Level VI.vi"/>
 				<Item Name="Draw Flattened Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Flattened Pixmap.vi"/>
 				<Item Name="FixBadRect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/FixBadRect.vi"/>
+				<Item Name="nisyscfg.lvlib" Type="Library" URL="/&lt;vilib&gt;/nisyscfg/nisyscfg.lvlib"/>
+				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 			</Item>
 			<Item Name="er4commlib_labview.dll" Type="Document" URL="../../labview_to_share_V3/er4commlib_labview.dll"/>
 		</Item>
