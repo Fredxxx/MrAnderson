@@ -23,6 +23,8 @@
 			<Item Name="readData.vi" Type="VI" URL="../readData.vi"/>
 			<Item Name="getDevicePara.vi" Type="VI" URL="../getDevicePara.vi"/>
 			<Item Name="setDevicePara.vi" Type="VI" URL="../setDevicePara.vi"/>
+			<Item Name="createSavingPath.vi" Type="VI" URL="../createSavingPath.vi"/>
+			<Item Name="savingPrepDataForDisp.vi" Type="VI" URL="../savingPrepDataForDisp.vi"/>
 		</Item>
 		<Item Name="test" Type="Folder">
 			<Item Name="conDisCon.vi" Type="VI" URL="../conDisCon.vi"/>
@@ -47,6 +49,9 @@
 				<Item Name="nisyscfg.lvlib" Type="Library" URL="/&lt;vilib&gt;/nisyscfg/nisyscfg.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
+				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
+				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 			</Item>
 			<Item Name="er4commlib_labview.dll" Type="Document" URL="../../labview_to_share_V3/er4commlib_labview.dll"/>
 		</Item>
