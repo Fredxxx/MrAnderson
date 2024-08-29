@@ -25,6 +25,7 @@
 			<Item Name="setDevicePara.vi" Type="VI" URL="../setDevicePara.vi"/>
 			<Item Name="createSavingPath.vi" Type="VI" URL="../createSavingPath.vi"/>
 			<Item Name="savingPrepDataForDisp.vi" Type="VI" URL="../savingPrepDataForDisp.vi"/>
+			<Item Name="stopVoltageProtocol.vi" Type="VI" URL="../stopVoltageProtocol.vi"/>
 		</Item>
 		<Item Name="test" Type="Folder">
 			<Item Name="conDisCon.vi" Type="VI" URL="../conDisCon.vi"/>
