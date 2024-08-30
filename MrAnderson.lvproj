@@ -33,6 +33,7 @@
 			<Item Name="testy.vi" Type="VI" URL="../testy.vi"/>
 		</Item>
 		<Item Name="theOne_V2.vi" Type="VI" URL="../theOne_V2.vi"/>
+		<Item Name="theOne_V4.vi" Type="VI" URL="../theOne_V4.vi"/>
 		<Item Name="theOne_V3.vi" Type="VI" URL="../theOne_V3.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
@@ -55,6 +56,9 @@
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 			</Item>
 			<Item Name="er4commlib_labview.dll" Type="Document" URL="../../labview_to_share_V3/er4commlib_labview.dll"/>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
