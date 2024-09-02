@@ -26,6 +26,7 @@
 			<Item Name="createSavingPath.vi" Type="VI" URL="../createSavingPath.vi"/>
 			<Item Name="savingPrepDataForDisp.vi" Type="VI" URL="../savingPrepDataForDisp.vi"/>
 			<Item Name="stopVoltageProtocol.vi" Type="VI" URL="../stopVoltageProtocol.vi"/>
+			<Item Name="displayTriggeredStand.vi" Type="VI" URL="../displayTriggeredStand.vi"/>
 		</Item>
 		<Item Name="test" Type="Folder">
 			<Item Name="conDisCon.vi" Type="VI" URL="../conDisCon.vi"/>
