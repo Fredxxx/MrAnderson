@@ -18,6 +18,7 @@
 		</Item>
 		<Item Name="helpers" Type="Folder">
 			<Item Name="laserInit.vi" Type="VI" URL="../laserInit.vi"/>
+			<Item Name="laserInitGen.vi" Type="VI" URL="../laserInitGen.vi"/>
 			<Item Name="stackErrorSimpleMulti.vi" Type="VI" URL="../stackErrorSimpleMulti.vi"/>
 			<Item Name="prepDataForDisplay.vi" Type="VI" URL="../prepDataForDisplay.vi"/>
 			<Item Name="channelSort.vi" Type="VI" URL="../channelSort.vi"/>
@@ -38,7 +39,6 @@
 		<Item Name="theOne_V4.vi" Type="VI" URL="../theOne_V4.vi"/>
 		<Item Name="theOne_V3.vi" Type="VI" URL="../theOne_V3.vi"/>
 		<Item Name="er4commlib_labview.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4commlib_labview/er4commlib_labview.lvlib"/>
-		<Item Name="laserInitGen.vi" Type="VI" URL="../laserInitGen.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
