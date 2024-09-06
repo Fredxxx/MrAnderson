@@ -40,6 +40,7 @@
 		<Item Name="theOne_V3.vi" Type="VI" URL="../theOne_V3.vi"/>
 		<Item Name="er4commlib_labview.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4commlib_labview/er4commlib_labview.lvlib"/>
 		<Item Name="CoboltLaser_AreYouThere.vi" Type="VI" URL="../../CoboltLaserDrivers_Public_LV2021/CoboltLaserDrivers_Public/CoboltLaser_AreYouThere.vi"/>
+		<Item Name="laserShutDown.vi" Type="VI" URL="../laserShutDown.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
@@ -64,11 +65,6 @@
 			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="ExpectedResponseType.ctl" Type="VI" URL="../../../Users/Fred/Desktop/CoboltMonitor-6.1.4.0/CoboltLaserDrivers_Public_LV2021/CoboltLaserDrivers_Public/CoboltLaser_Controls/ExpectedResponseType.ctl"/>
-			<Item Name="CoboltLaser_ComPortWrite.vi" Type="VI" URL="../../../Users/Fred/Desktop/CoboltMonitor-6.1.4.0/CoboltLaserDrivers_Public_LV2021/CoboltLaserDrivers_Public/CoboltLaser_SubVIs/CoboltLaser_ComPortWrite.vi"/>
-			<Item Name="CoboltLaser_ComPortRead.vi" Type="VI" URL="../../../Users/Fred/Desktop/CoboltMonitor-6.1.4.0/CoboltLaserDrivers_Public_LV2021/CoboltLaserDrivers_Public/CoboltLaser_SubVIs/CoboltLaser_ComPortRead.vi"/>
-			<Item Name="CoboltLaser_ResponseCheck.vi" Type="VI" URL="../../../Users/Fred/Desktop/CoboltMonitor-6.1.4.0/CoboltLaserDrivers_Public_LV2021/CoboltLaserDrivers_Public/CoboltLaser_SubVIs/CoboltLaser_ResponseCheck.vi"/>
-			<Item Name="CoboltLaser_BasicWriteReadCheck.vi" Type="VI" URL="../../../Users/Fred/Desktop/CoboltMonitor-6.1.4.0/CoboltLaserDrivers_Public_LV2021/CoboltLaserDrivers_Public/CoboltLaser_SubVIs/CoboltLaser_BasicWriteReadCheck.vi"/>
 			<Item Name="ExpectedResponseType.ctl" Type="VI" URL="../../CoboltLaserDrivers_Public_LV2021/CoboltLaserDrivers_Public/CoboltLaser_Controls/ExpectedResponseType.ctl"/>
 			<Item Name="CoboltLaser_BasicWriteReadCheck.vi" Type="VI" URL="../../CoboltLaserDrivers_Public_LV2021/CoboltLaserDrivers_Public/CoboltLaser_SubVIs/CoboltLaser_BasicWriteReadCheck.vi"/>
 			<Item Name="CoboltLaser_ComPortWrite.vi" Type="VI" URL="../../CoboltLaserDrivers_Public_LV2021/CoboltLaserDrivers_Public/CoboltLaser_SubVIs/CoboltLaser_ComPortWrite.vi"/>
