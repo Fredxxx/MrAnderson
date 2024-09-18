@@ -37,9 +37,9 @@
 			<Item Name="minExampleReadDataPackage.vi" Type="VI" URL="../minExampleReadDataPackage.vi"/>
 			<Item Name="testy.vi" Type="VI" URL="../testy.vi"/>
 		</Item>
-		<Item Name="theOne_V2.vi" Type="VI" URL="../theOne_V2.vi"/>
 		<Item Name="theOne_V4.vi" Type="VI" URL="../theOne_V4.vi"/>
 		<Item Name="theOne_V3.vi" Type="VI" URL="../theOne_V3.vi"/>
+		<Item Name="theOne_V2.vi" Type="VI" URL="../theOne_V2.vi"/>
 		<Item Name="er4commlib_labview.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4commlib_labview/er4commlib_labview.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
