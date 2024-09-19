@@ -31,6 +31,10 @@
 			<Item Name="displayTriggeredStand.vi" Type="VI" URL="../displayTriggeredStand.vi"/>
 			<Item Name="laserShutDown.vi" Type="VI" URL="../laserShutDown.vi"/>
 			<Item Name="laserChangePara.vi" Type="VI" URL="../laserChangePara.vi"/>
+			<Item Name="capCalc_volProtPara.vi" Type="VI" URL="../capCalc_volProtPara.vi"/>
+			<Item Name="capCalc_calcMean.vi" Type="VI" URL="../capCalc_calcMean.vi"/>
+			<Item Name="capCalc.vi" Type="VI" URL="../capCalc.vi"/>
+			<Item Name="capCalc_rad.vi" Type="VI" URL="../capCalc_rad.vi"/>
 		</Item>
 		<Item Name="test" Type="Folder">
 			<Item Name="conDisCon.vi" Type="VI" URL="../conDisCon.vi"/>
@@ -38,8 +42,6 @@
 			<Item Name="testy.vi" Type="VI" URL="../testy.vi"/>
 		</Item>
 		<Item Name="theOne_V4.vi" Type="VI" URL="../theOne_V4.vi"/>
-		<Item Name="theOne_V3.vi" Type="VI" URL="../theOne_V3.vi"/>
-		<Item Name="theOne_V2.vi" Type="VI" URL="../theOne_V2.vi"/>
 		<Item Name="er4commlib_labview.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4commlib_labview/er4commlib_labview.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -91,6 +93,7 @@
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
+				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 			</Item>
 			<Item Name="er4commlib_labview.dll" Type="Document" URL="../../labview_to_share_V3/er4commlib_labview.dll"/>
 			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
@@ -102,6 +105,7 @@
 			<Item Name="CoboltLaser_ComPortRead.vi" Type="VI" URL="../../CoboltLaserDrivers_Public_LV2021/CoboltLaserDrivers_Public/CoboltLaser_SubVIs/CoboltLaser_ComPortRead.vi"/>
 			<Item Name="CoboltLaser_ResponseCheck.vi" Type="VI" URL="../../CoboltLaserDrivers_Public_LV2021/CoboltLaserDrivers_Public/CoboltLaser_SubVIs/CoboltLaser_ResponseCheck.vi"/>
 			<Item Name="Serial - Settings.ctl" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2021/examples/Instrument IO/Serial/support/Serial - Settings.ctl"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
