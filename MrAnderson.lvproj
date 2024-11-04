@@ -26,7 +26,7 @@
 			<Item Name="getDevicePara.vi" Type="VI" URL="../getDevicePara.vi"/>
 			<Item Name="setDevicePara.vi" Type="VI" URL="../setDevicePara.vi"/>
 			<Item Name="createSavingPath.vi" Type="VI" URL="../createSavingPath.vi"/>
-			<Item Name="savingPrepDataForDisp.vi" Type="VI" URL="../savingPrepDataForDisp.vi"/>
+			<Item Name="savingPrepDataForDisp_bin_01.vi" Type="VI" URL="../savingPrepDataForDisp_bin_01.vi"/>
 			<Item Name="stopVoltageProtocol.vi" Type="VI" URL="../stopVoltageProtocol.vi"/>
 			<Item Name="displayTriggeredStand.vi" Type="VI" URL="../displayTriggeredStand.vi"/>
 			<Item Name="laserShutDown.vi" Type="VI" URL="../laserShutDown.vi"/>
@@ -44,6 +44,7 @@
 		<Item Name="theOne_V4.vi" Type="VI" URL="../theOne_V4.vi"/>
 		<Item Name="er4commlib_labview.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4commlib_labview/er4commlib_labview.lvlib"/>
 		<Item Name="helper_binaryReadAndWrite.vi" Type="VI" URL="../helper_binaryReadAndWrite.vi"/>
+		<Item Name="readBinary.vi" Type="VI" URL="../readBinary.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
