@@ -45,6 +45,7 @@
 		<Item Name="er4commlib_labview.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4commlib_labview/er4commlib_labview.lvlib"/>
 		<Item Name="helper_binaryReadAndWrite.vi" Type="VI" URL="../helper_binaryReadAndWrite.vi"/>
 		<Item Name="readBinary.vi" Type="VI" URL="../readBinary.vi"/>
+		<Item Name="E4_readDataAndCutBuffer.vi" Type="VI" URL="../E4_readDataAndCutBuffer.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
