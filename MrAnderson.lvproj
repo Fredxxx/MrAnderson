@@ -27,6 +27,7 @@
 			<Item Name="channelSort.vi" Type="VI" URL="../channelSort.vi"/>
 			<Item Name="createSaveTxtUniqueName.vi" Type="VI" URL="../createSaveTxtUniqueName.vi"/>
 			<Item Name="createSavingPath.vi" Type="VI" URL="../createSavingPath.vi"/>
+			<Item Name="Decimate.vi" Type="VI" URL="../../../Users/Fred/Downloads/Decimate.vi"/>
 			<Item Name="displayTriggeredStand.vi" Type="VI" URL="../displayTriggeredStand.vi"/>
 			<Item Name="E4_readDataAndCutBuffer.vi" Type="VI" URL="../E4_readDataAndCutBuffer.vi"/>
 			<Item Name="getDevicePara.vi" Type="VI" URL="../getDevicePara.vi"/>
@@ -50,7 +51,6 @@
 		<Item Name="theOne_V4.vi" Type="VI" URL="../theOne_V4.vi"/>
 		<Item Name="er4commlib_labview.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4commlib_labview/er4commlib_labview.lvlib"/>
 		<Item Name="readBinary.vi" Type="VI" URL="../readBinary.vi"/>
-		<Item Name="Decimate.vi" Type="VI" URL="../../../Users/Fred/Downloads/Decimate.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
