@@ -15,6 +15,7 @@
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="convertErrorIntToText.vi" Type="VI" URL="../convertErrorIntToText.vi"/>
 			<Item Name="convertVecToArray.vi" Type="VI" URL="../convertVecToArray.vi"/>
+			<Item Name="convertVecToArray_bin_01.vi" Type="VI" URL="../convertVecToArray_bin_01.vi"/>
 			<Item Name="unitToPrefix.vi" Type="VI" URL="../unitToPrefix.vi"/>
 		</Item>
 		<Item Name="helpers" Type="Folder">
@@ -49,7 +50,6 @@
 		<Item Name="theOne_V4.vi" Type="VI" URL="../theOne_V4.vi"/>
 		<Item Name="er4commlib_labview.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4commlib_labview/er4commlib_labview.lvlib"/>
 		<Item Name="readBinary.vi" Type="VI" URL="../readBinary.vi"/>
-		<Item Name="convertVecToArray_bin_01.vi" Type="VI" URL="../convertVecToArray_bin_01.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
