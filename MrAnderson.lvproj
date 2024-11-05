@@ -12,40 +12,44 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="converters" Type="Folder">
+			<Property Name="NI.SortType" Type="Int">0</Property>
+			<Item Name="convertErrorIntToText.vi" Type="VI" URL="../convertErrorIntToText.vi"/>
 			<Item Name="convertVecToArray.vi" Type="VI" URL="../convertVecToArray.vi"/>
 			<Item Name="unitToPrefix.vi" Type="VI" URL="../unitToPrefix.vi"/>
-			<Item Name="convertErrorIntToText.vi" Type="VI" URL="../convertErrorIntToText.vi"/>
 		</Item>
 		<Item Name="helpers" Type="Folder">
+			<Property Name="NI.SortType" Type="Int">0</Property>
+			<Item Name="capCalc.vi" Type="VI" URL="../capCalc.vi"/>
+			<Item Name="capCalc_calcMean.vi" Type="VI" URL="../capCalc_calcMean.vi"/>
+			<Item Name="capCalc_rad.vi" Type="VI" URL="../capCalc_rad.vi"/>
+			<Item Name="capCalc_volProtPara.vi" Type="VI" URL="../capCalc_volProtPara.vi"/>
+			<Item Name="channelSort.vi" Type="VI" URL="../channelSort.vi"/>
+			<Item Name="createSaveTxtUniqueName.vi" Type="VI" URL="../createSaveTxtUniqueName.vi"/>
+			<Item Name="createSavingPath.vi" Type="VI" URL="../createSavingPath.vi"/>
+			<Item Name="displayTriggeredStand.vi" Type="VI" URL="../displayTriggeredStand.vi"/>
+			<Item Name="E4_readDataAndCutBuffer.vi" Type="VI" URL="../E4_readDataAndCutBuffer.vi"/>
+			<Item Name="getDevicePara.vi" Type="VI" URL="../getDevicePara.vi"/>
+			<Item Name="laserChangePara.vi" Type="VI" URL="../laserChangePara.vi"/>
 			<Item Name="laserInit.vi" Type="VI" URL="../laserInit.vi"/>
 			<Item Name="laserInitGen.vi" Type="VI" URL="../laserInitGen.vi"/>
-			<Item Name="stackErrorSimpleMulti.vi" Type="VI" URL="../stackErrorSimpleMulti.vi"/>
-			<Item Name="prepDataForDisplay.vi" Type="VI" URL="../prepDataForDisplay.vi"/>
-			<Item Name="channelSort.vi" Type="VI" URL="../channelSort.vi"/>
-			<Item Name="readData.vi" Type="VI" URL="../readData.vi"/>
-			<Item Name="getDevicePara.vi" Type="VI" URL="../getDevicePara.vi"/>
-			<Item Name="setDevicePara.vi" Type="VI" URL="../setDevicePara.vi"/>
-			<Item Name="createSavingPath.vi" Type="VI" URL="../createSavingPath.vi"/>
-			<Item Name="savingPrepDataForDisp_bin_01.vi" Type="VI" URL="../savingPrepDataForDisp_bin_01.vi"/>
-			<Item Name="stopVoltageProtocol.vi" Type="VI" URL="../stopVoltageProtocol.vi"/>
-			<Item Name="displayTriggeredStand.vi" Type="VI" URL="../displayTriggeredStand.vi"/>
 			<Item Name="laserShutDown.vi" Type="VI" URL="../laserShutDown.vi"/>
-			<Item Name="laserChangePara.vi" Type="VI" URL="../laserChangePara.vi"/>
-			<Item Name="capCalc_volProtPara.vi" Type="VI" URL="../capCalc_volProtPara.vi"/>
-			<Item Name="capCalc_calcMean.vi" Type="VI" URL="../capCalc_calcMean.vi"/>
-			<Item Name="capCalc.vi" Type="VI" URL="../capCalc.vi"/>
-			<Item Name="capCalc_rad.vi" Type="VI" URL="../capCalc_rad.vi"/>
+			<Item Name="prepDataForDisplay.vi" Type="VI" URL="../prepDataForDisplay.vi"/>
+			<Item Name="readData.vi" Type="VI" URL="../readData.vi"/>
+			<Item Name="savingPrepDataForDisp_bin_01.vi" Type="VI" URL="../savingPrepDataForDisp_bin_01.vi"/>
+			<Item Name="setDevicePara.vi" Type="VI" URL="../setDevicePara.vi"/>
+			<Item Name="stackErrorSimpleMulti.vi" Type="VI" URL="../stackErrorSimpleMulti.vi"/>
+			<Item Name="stopVoltageProtocol.vi" Type="VI" URL="../stopVoltageProtocol.vi"/>
 		</Item>
 		<Item Name="test" Type="Folder">
 			<Item Name="conDisCon.vi" Type="VI" URL="../conDisCon.vi"/>
 			<Item Name="minExampleReadDataPackage.vi" Type="VI" URL="../minExampleReadDataPackage.vi"/>
 			<Item Name="testy.vi" Type="VI" URL="../testy.vi"/>
+			<Item Name="helper_binaryReadAndWrite.vi" Type="VI" URL="../helper_binaryReadAndWrite.vi"/>
 		</Item>
 		<Item Name="theOne_V4.vi" Type="VI" URL="../theOne_V4.vi"/>
 		<Item Name="er4commlib_labview.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4commlib_labview/er4commlib_labview.lvlib"/>
-		<Item Name="helper_binaryReadAndWrite.vi" Type="VI" URL="../helper_binaryReadAndWrite.vi"/>
 		<Item Name="readBinary.vi" Type="VI" URL="../readBinary.vi"/>
-		<Item Name="E4_readDataAndCutBuffer.vi" Type="VI" URL="../E4_readDataAndCutBuffer.vi"/>
+		<Item Name="convertVecToArray_bin_01.vi" Type="VI" URL="../convertVecToArray_bin_01.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
