@@ -20,6 +20,8 @@
 		</Item>
 		<Item Name="helpers" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
+			<Item Name="arduinoClose.vi" Type="VI" URL="../arduinoClose.vi"/>
+			<Item Name="arduinoInit.vi" Type="VI" URL="../arduinoInit.vi"/>
 			<Item Name="capCalc.vi" Type="VI" URL="../capCalc.vi"/>
 			<Item Name="capCalc_calcMean.vi" Type="VI" URL="../capCalc_calcMean.vi"/>
 			<Item Name="capCalc_rad.vi" Type="VI" URL="../capCalc_rad.vi"/>
@@ -47,11 +49,12 @@
 			<Item Name="minExampleReadDataPackage.vi" Type="VI" URL="../minExampleReadDataPackage.vi"/>
 			<Item Name="testy.vi" Type="VI" URL="../testy.vi"/>
 			<Item Name="helper_binaryReadAndWrite.vi" Type="VI" URL="../helper_binaryReadAndWrite.vi"/>
+			<Item Name="LaserBox.vi" Type="VI" URL="../../../temp/LaserBox.vi"/>
+			<Item Name="arduinoTest.vi" Type="VI" URL="../arduinoTest.vi"/>
 		</Item>
 		<Item Name="theOne_V4.vi" Type="VI" URL="../theOne_V4.vi"/>
 		<Item Name="er4commlib_labview.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4commlib_labview/er4commlib_labview.lvlib"/>
 		<Item Name="readBinary.vi" Type="VI" URL="../readBinary.vi"/>
-		<Item Name="LaserBox.vi" Type="VI" URL="../../../temp/LaserBox.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
@@ -118,9 +121,6 @@
 			<Item Name="CoboltLaser_ResponseCheck.vi" Type="VI" URL="../../CoboltLaserDrivers_Public_LV2021/CoboltLaserDrivers_Public/CoboltLaser_SubVIs/CoboltLaser_ResponseCheck.vi"/>
 			<Item Name="Serial - Settings.ctl" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2021/examples/Instrument IO/Serial/support/Serial - Settings.ctl"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
