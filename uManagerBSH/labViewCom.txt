@@ -1,0 +1,1 @@
+Start: 1; ExpTime: 10; NumOfImages: 100;

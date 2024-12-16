@@ -1,0 +1,54 @@
+import java.io.FileReader;
+import java.util.List;
+import java.util.ArrayList;
+
+// define stuff
+filePath = "c:/UlbrichFred/nEOdiag/uManagerBSH/labViewCom.txt";
+filePathSeq = "c:/UlbrichFred/nEOdiag/uManagerBSH/AcqSettings.txt";
+
+// read txt file into single string
+char[] readTXT(rootDirName){
+	FileReader fileReader=new FileReader(rootDirName);
+	BufferedReader bufferReader= new BufferedReader(fileReader);
+	String line=bufferReader.readLine();
+	fileReader.close();
+	bufferReader.close();
+	lineChar = line.toCharArray();
+	print(lineChar);
+	return lineChar;
+	}
+
+// 
+String dataStr = new String(readTXT(filePath));
+mm.scripter().message(dataStr);
+//int start = Integer.parseInt(dataStr.substring(dataStr.indexOf("Start: ") + 7, dataStr.indexOf(";")));
+//print(start);
+int flag = 0;
+int cnt = 0;
+while(flag == 0) {
+	Thread.sleep(100);
+	cnt++;
+	String dataStr = new String(readTXT(filePath));
+	flag = Integer.parseInt(dataStr.substring(dataStr.indexOf("Start: ") + 7, dataStr.indexOf(";")));
+	if(flag == 1){
+		mm.scripter().message("detected flag; counter: " + cnt + "; flag: " + flag);	
+		// analyse txt string
+		int index = dataStr.indexOf(";");
+		list = new ArrayList();
+		while (index >= 0) {
+			list.add(index);
+		   index = dataStr.indexOf(";", index + 1);
+			}
+		int start = Integer.parseInt(dataStr.substring(dataStr.indexOf("Start: ") + 7, list.get(0)));
+		int expTime = Integer.parseInt(dataStr.substring(dataStr.indexOf("ExpTime: ") + 9, list.get(1)));
+		int numImg = Integer.parseInt(dataStr.substring(dataStr.indexOf("NumOfImages: ") + 13, list.get(2)));	
+		mm.scripter().message("Start: "+ start + "; expTime: " + expTime + "; NumOfImages: " + numImg + ";");
+		mmc.setProperty("Camera", "Exposure", expTime);
+		// set to external triggering
+		seq = mm.acquisitions().loadSequenceSettings(filePathSeq);
+		mm.acquisitions().runAcquisitionWithSettings(seq, true);
+		} else {
+		mm.scripter().message("waiting for flag; counter: " + cnt + "; flag: " + flag);
+		}
+		// reset micromanager; internal triggering etc.
+	}

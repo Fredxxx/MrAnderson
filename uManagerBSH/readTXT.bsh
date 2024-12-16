@@ -1,0 +1,12 @@
+import java.io.FileReader;
+rootDirName = "c:/UlbrichFred/nEOdiag/uManagerBSH/example_1.json";
+FileReader fileReader=new FileReader(rootDirName);
+BufferedReader bufferReader= new BufferedReader(fileReader);
+String line=bufferReader.readLine();
+while(line!=null)
+	{
+		print(line);
+		line=bufferReader.readLine();
+	}
+fileReader.close();
+bufferReader.close();
