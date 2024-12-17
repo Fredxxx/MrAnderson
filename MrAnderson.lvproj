@@ -29,7 +29,7 @@
 			<Item Name="channelSort.vi" Type="VI" URL="../channelSort.vi"/>
 			<Item Name="createSaveTxtUniqueName.vi" Type="VI" URL="../createSaveTxtUniqueName.vi"/>
 			<Item Name="createSavingPath.vi" Type="VI" URL="../createSavingPath.vi"/>
-			<Item Name="Decimate.vi" Type="VI" URL="../../../Users/Fred/Downloads/Decimate.vi"/>
+			<Item Name="Decimate.vi" Type="VI" URL="../Decimate.vi"/>
 			<Item Name="displayTriggeredStand.vi" Type="VI" URL="../displayTriggeredStand.vi"/>
 			<Item Name="E4_readDataAndCutBuffer.vi" Type="VI" URL="../E4_readDataAndCutBuffer.vi"/>
 			<Item Name="getDevicePara.vi" Type="VI" URL="../getDevicePara.vi"/>
@@ -43,6 +43,7 @@
 			<Item Name="setDevicePara.vi" Type="VI" URL="../setDevicePara.vi"/>
 			<Item Name="stackErrorSimpleMulti.vi" Type="VI" URL="../stackErrorSimpleMulti.vi"/>
 			<Item Name="stopVoltageProtocol.vi" Type="VI" URL="../stopVoltageProtocol.vi"/>
+			<Item Name="uManagerReadWriteTXT.vi" Type="VI" URL="../uManagerReadWriteTXT.vi"/>
 		</Item>
 		<Item Name="test" Type="Folder">
 			<Item Name="conDisCon.vi" Type="VI" URL="../conDisCon.vi"/>
@@ -51,6 +52,7 @@
 			<Item Name="helper_binaryReadAndWrite.vi" Type="VI" URL="../helper_binaryReadAndWrite.vi"/>
 			<Item Name="LaserBox.vi" Type="VI" URL="../../../temp/LaserBox.vi"/>
 			<Item Name="arduinoTest.vi" Type="VI" URL="../arduinoTest.vi"/>
+			<Item Name="testUManagerReadWriteTXT.vi" Type="VI" URL="../testUManagerReadWriteTXT.vi"/>
 		</Item>
 		<Item Name="theOne_V4.vi" Type="VI" URL="../theOne_V4.vi"/>
 		<Item Name="er4commlib_labview.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4commlib_labview/er4commlib_labview.lvlib"/>
