@@ -1,0 +1,37 @@
+import org.json.simple.JSONObject;
+import org.json.simple.JSONArray;
+print("Start");
+mmc.setProperty("Camera", "Exposure", 100);
+camExp = mmc.getProperty("Camera", "Exposure");
+print("CamExpPre:  " + camExp);
+mmc.setProperty("Camera", "Exposure", 50);
+camExp = mmc.getProperty("Camera", "Exposure");
+print("CamExpPost:  " + camExp);
+print("End");
+print("loaded:  " + 50);
+print(" ");
+import java.io.FileReader;
+FileReader fileReader=new FileReader(“c:\\UlbrichFred\nEOdiag\uManagerBSH\example_1.json”);
+int i =fileReader.read();
+while(i!=-1)
+	{
+		print((char)i);
+		i=fileReader.read();
+	}
+
+
+import java.util.List;
+import java.util.ArrayList;
+
+list = new ArrayList();
+
+for(int i = 0; i < 5; i++)  {
+    list.add(i);
+}
+
+int getStarttt(lineChar){
+	// analyse txt string
+	int start = Integer.parseInt(dataStr.substring(dataStr.indexOf("Start: ") + 7, dataStr.indexOf(";"));
+	print(start);
+	return start; 
+	}
