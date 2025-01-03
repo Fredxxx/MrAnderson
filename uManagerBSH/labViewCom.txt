@@ -1,1 +1,1 @@
-test
+Start: 0; ExpTime: 100; NumOfImages: 1;
