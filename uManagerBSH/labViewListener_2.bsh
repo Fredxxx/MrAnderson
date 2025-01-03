@@ -1,29 +1,30 @@
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.List;
 import java.util.ArrayList;
 
-// define stuff
-filePath = "c:/nEOdiag/MrAnderson/uManagerBSH/labViewCom.txt";
-filePathSeq = "c:/nEOdiag/MrAnderson/uManagerBSH/AcqSettings.txt";
 
 // read txt file into single string
-char[] readTXT(rootDirName){
+String readTXT(rootDirName){
 	FileReader fileReader=new FileReader(rootDirName);
 	BufferedReader bufferReader= new BufferedReader(fileReader);
 	String line=bufferReader.readLine();
 	fileReader.close();
 	bufferReader.close();
-	lineChar = line.toCharArray();
-	return lineChar;
+	return line;
 	}
 
-// 
-String dataStr = new String(readTXT(filePath));
-mm.scripter().message(dataStr);
+// define stuff
+filePath = "c:/nEOdiag/MrAnderson/uManagerBSH/labViewCom.txt";
+filePathSeq = "c:/nEOdiag/MrAnderson/uManagerBSH/AcqSettings.txt";
+// reset variables
+String dataStr = "empty string";
 int flagLV = 0;
 int flag = 0;
 int cnt = 0;
-String dataStr = "empty string";
+dataStr = readTXT(filePath);
+mm.scripter().message(dataStr);
+
 while(flag == 0) {
 	Thread.sleep(100);
 	cnt++;
@@ -32,7 +33,7 @@ while(flag == 0) {
 	mm.scripter().message("flagLV: " + flagLV);
 	float cntSec = cnt*0.1;
 	if(flagLV == 1){
-		mm.scripter().message("detected flag; counter: " + cntSec + "s; flag: " + flagLV);	
+		//mm.scripter().message("detected flag; counter: " + cntSec + "s; flag: " + flagLV);	
 		// analyse txt string
 		int index = dataStr.indexOf(";");
 		list = new ArrayList();
@@ -40,20 +41,22 @@ while(flag == 0) {
 			list.add(index);
 		   index = dataStr.indexOf(";", index + 1);
 			}
-		int start = Integer.parseInt(dataStr.substring(dataStr.indexOf("Start: ") + 7, list.get(0)));
 		int expTime = Integer.parseInt(dataStr.substring(dataStr.indexOf("ExpTime: ") + 9, list.get(1)));
 		int numImg = Integer.parseInt(dataStr.substring(dataStr.indexOf("NumOfImages: ") + 13, list.get(2)));	
-		mm.scripter().message("Start: "+ start + "; expTime: " + expTime + "; NumOfImages: " + numImg + ";");
-		mmc.setProperty("Camera", "Exposure", expTime);
+		mm.scripter().message("detected flag; counter: " + cntSec + "s; flag: " + flagLV + "; expTime: " + expTime + "; NumOfImages: " + numImg + ";");
+		mmc.setProperty("Andor sCMOS Camera", "Exposure", expTime);
 		// set to external triggering
 		seq = mm.acquisitions().loadSequenceSettings(filePathSeq);
 		mm.acquisitions().runAcquisitionWithSettings(seq, true);
-		flag = 2;
-	} else if(flagLV == 0) {
+      FileWriter fileWriter=new FileWriter(filePath);
+		fileWriter.write("Start: 0; ExpTime: 100; NumOfImages: 1;");
+		fileWriter.close();
+		flag = 1;
+		} else if(flagLV == 0) {
 		mm.scripter().message("waiting for flag; counter: " + cntSec + "s; flag: " + flagLV);
-	} else {
+		} else {
 		mm.scripter().message("no flagLV detected");	
-	}
+		}
 		// reset micromanager; internal triggering etc.
-}
+	}
 mm.scripter().message("script ended");
