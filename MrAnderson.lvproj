@@ -43,7 +43,8 @@
 			<Item Name="setDevicePara.vi" Type="VI" URL="../setDevicePara.vi"/>
 			<Item Name="stackErrorSimpleMulti.vi" Type="VI" URL="../stackErrorSimpleMulti.vi"/>
 			<Item Name="stopVoltageProtocol.vi" Type="VI" URL="../stopVoltageProtocol.vi"/>
-			<Item Name="uManagerReadWriteTXT.vi" Type="VI" URL="../uManagerReadWriteTXT.vi"/>
+			<Item Name="uManagerReadTXT.vi" Type="VI" URL="../uManagerReadTXT.vi"/>
+			<Item Name="uManagerWriteTXT.vi" Type="VI" URL="../uManagerWriteTXT.vi"/>
 		</Item>
 		<Item Name="test" Type="Folder">
 			<Item Name="conDisCon.vi" Type="VI" URL="../conDisCon.vi"/>
@@ -57,6 +58,7 @@
 		<Item Name="theOne_V4.vi" Type="VI" URL="../theOne_V4.vi"/>
 		<Item Name="er4commlib_labview.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4commlib_labview/er4commlib_labview.lvlib"/>
 		<Item Name="readBinary.vi" Type="VI" URL="../readBinary.vi"/>
+		<Item Name="uManagerRearrangeStr.vi" Type="VI" URL="../uManagerRearrangeStr.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
