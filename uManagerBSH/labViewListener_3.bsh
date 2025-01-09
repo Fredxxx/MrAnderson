@@ -15,8 +15,10 @@ String readTXT(rootDirName){
 	}
 
 // define stuff
-filePath = "c:/Users/Fred/Documents/MrAnderson/uManagerBSH/labViewCom.txt";
-filePathSeq = "c:/Users/Fred/Documents/MrAnderson/uManagerBSH/AcqSettings.txt";
+//filePath = "c:/Users/Fred/Documents/MrAnderson/uManagerBSH/labViewCom.txt";
+//filePathSeq = "c:/Users/Fred/Documents/MrAnderson/uManagerBSH/AcqSettings.txt";
+filePath = "c:/neoDiag/MrAnderson/uManagerBSH/labViewCom.txt";
+filePathSeq = "c:/neoDiag/MrAnderson/uManagerBSH/AcqSettings.txt";
 // reset variables
 String dataStr = "empty string";
 int flagLV = 0;
@@ -53,8 +55,8 @@ while(flag == 0) {
 		int expTime = Integer.parseInt(dataStr.substring(dataStr.indexOf("ExpTime: ") + 9, list.get(1)));
 		int numImg = Integer.parseInt(dataStr.substring(dataStr.indexOf("NumOfImages: ") + 13, list.get(2)));	
 		mm.scripter().message("detected flag; counter: " + cntSec + "s; flag: " + flagLV + "; expTime: " + expTime + "; NumOfImages: " + numImg + ";");
-		mmc.setProperty("Camera", "Exposure", expTime);
-		//mmc.setProperty("Andor sCMOS Camera", "Exposure", expTime);
+		//mmc.setProperty("Camera", "Exposure", expTime);
+		mmc.setProperty("Andor sCMOS Camera", "Exposure", expTime);
 		// set to external triggering
 		seq = mm.acquisitions().loadSequenceSettings(filePathSeq);
 		mm.acquisitions().runAcquisitionWithSettings(seq, true);

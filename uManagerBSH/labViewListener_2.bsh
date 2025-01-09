@@ -3,7 +3,6 @@ import java.io.FileWriter;
 import java.util.List;
 import java.util.ArrayList;
 
-
 // read txt file into single string
 String readTXT(rootDirName){
 	FileReader fileReader=new FileReader(rootDirName);
@@ -13,7 +12,7 @@ String readTXT(rootDirName){
 	bufferReader.close();
 	return line;
 	}
-
+	
 // define stuff
 filePath = "c:/nEOdiag/MrAnderson/uManagerBSH/labViewCom.txt";
 filePathSeq = "c:/nEOdiag/MrAnderson/uManagerBSH/AcqSettings.txt";
