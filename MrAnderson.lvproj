@@ -56,7 +56,7 @@
 			<Item Name="testUManagerReadWriteTXT.vi" Type="VI" URL="../testUManagerReadWriteTXT.vi"/>
 		</Item>
 		<Item Name="theOne_V4.vi" Type="VI" URL="../theOne_V4.vi"/>
-		<Item Name="er4commlib_labview.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4commlib_labview/er4commlib_labview.lvlib"/>
+		<Item Name="er4commlib_labview.lvlib" Type="Library" URL="/&lt;userlib&gt;/er4_163/er4commlib_labview.lvlib"/>
 		<Item Name="readBinary.vi" Type="VI" URL="../readBinary.vi"/>
 		<Item Name="uManagerRearrangeStr.vi" Type="VI" URL="../uManagerRearrangeStr.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -117,7 +117,12 @@
 				<Item Name="Random Number (Range).vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range).vi"/>
 				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
 			</Item>
-			<Item Name="er4commlib_labview.dll" Type="Document" URL="../../labview_to_share_V3/er4commlib_labview.dll"/>
+			<Item Name="user.lib" Type="Folder">
+				<Item Name="convert Voltage Value.vi" Type="VI" URL="/&lt;userlib&gt;/er4commlib_labview/VIs/convert Voltage Value.vi"/>
+				<Item Name="read Data.vi" Type="VI" URL="/&lt;userlib&gt;/er4commlib_labview/VIs/read Data.vi"/>
+				<Item Name="get Queue Status.vi" Type="VI" URL="/&lt;userlib&gt;/er4commlib_labview/VIs/get Queue Status.vi"/>
+				<Item Name="convert Current Value.vi" Type="VI" URL="/&lt;userlib&gt;/er4commlib_labview/VIs/convert Current Value.vi"/>
+			</Item>
 			<Item Name="ExpectedResponseType.ctl" Type="VI" URL="../../CoboltLaserDrivers_Public_LV2021/CoboltLaserDrivers_Public/CoboltLaser_Controls/ExpectedResponseType.ctl"/>
 			<Item Name="CoboltLaser_BasicWriteReadCheck.vi" Type="VI" URL="../../CoboltLaserDrivers_Public_LV2021/CoboltLaserDrivers_Public/CoboltLaser_SubVIs/CoboltLaser_BasicWriteReadCheck.vi"/>
 			<Item Name="CoboltLaser_ComPortWrite.vi" Type="VI" URL="../../CoboltLaserDrivers_Public_LV2021/CoboltLaserDrivers_Public/CoboltLaser_SubVIs/CoboltLaser_ComPortWrite.vi"/>
@@ -125,6 +130,7 @@
 			<Item Name="CoboltLaser_ResponseCheck.vi" Type="VI" URL="../../CoboltLaserDrivers_Public_LV2021/CoboltLaserDrivers_Public/CoboltLaser_SubVIs/CoboltLaser_ResponseCheck.vi"/>
 			<Item Name="Serial - Settings.ctl" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2021/examples/Instrument IO/Serial/support/Serial - Settings.ctl"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="er4commlib_labview.dll" Type="Document" URL="../../er4_labview_163/labview_to_share/er4commlib_labview.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

@@ -36,7 +36,7 @@ while(flag == 0) {
    	//log.info(str);//<-- this semicolon is VERY important
 	}
 	catch (Exception ex) {
-   	mm.scripter().message("Error in beanshell", ex);
+   	mm.scripter().message("Error in beanshell");
 	}
 	
 	
