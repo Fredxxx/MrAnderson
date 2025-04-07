@@ -131,9 +131,6 @@
 			<Item Name="Serial - Settings.ctl" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2021/examples/Instrument IO/Serial/support/Serial - Settings.ctl"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="er4commlib_labview.dll" Type="Document" URL="../../er4_labview_163/labview_to_share/er4commlib_labview.dll"/>
-			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

@@ -1,0 +1,97 @@
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.List;
+import java.util.ArrayList;
+
+
+// function to read txt file into single string
+String readTXT(rootDirName){
+	FileReader fileReader=new FileReader(rootDirName);
+	BufferedReader bufferReader= new BufferedReader(fileReader);
+	String line=bufferReader.readLine();
+	fileReader.close();
+	bufferReader.close();
+	return line;
+	}
+
+// define path of communication txt file 
+filePath = "c:/neoDiag/MrAnderson/uManagerBSH/labViewCom.txt"; // communication string
+filePathSeq = "c:/neoDiag/MrAnderson/uManagerBSH/AcqSettings.txt"; // string for acquisition settings
+
+// reset variables
+String dataStr = "empty string"; //string for transmitted parameters from LabView
+int flagLV = 0; 						// flag to start uManager through LabView
+int flag = 0;							// helper flag for watch loop
+int cnt = 0;							// loop counter in iterations
+double cntSec = 0;					// loop counter in seconds
+double camIntUM = 100;				// integration timer before LabView acquisition
+int expTime = 100;					// integration time during LabView acquisition
+int numImg = 10;						// image number during LabView acquisition
+
+// read communication string and display -> not really needed
+dataStr = readTXT(filePath);
+mm.scripter().message(dataStr);
+
+// watch loop checks if flagLV TRUE
+while(flag == 0) {
+	Thread.sleep(100);
+	cnt++;
+
+	// read data string
+	try {
+		dataStr = new String(readTXT(filePath));
+	}
+	catch (Exception ex) {
+   	mm.scripter().message("Error in beanshell");
+	}
+	
+	// extract labView flag and print
+	flagLV = Integer.parseInt(dataStr.substring(dataStr.indexOf("Start: ") + 7, dataStr.indexOf(";")));
+	mm.scripter().message("flagLV: " + flagLV);
+	
+	// if LabView flag is true -> start acquisition with settings from filePathSeq
+	if(flagLV == 1){
+			
+		// read communication txt into list
+		int index = dataStr.indexOf(";");
+		list = new ArrayList();
+		while (index >= 0) {
+			list.add(index);
+		   index = dataStr.indexOf(";", index + 1);
+			}
+
+		// extract exposure time and number of images
+		expTime = Integer.parseInt(dataStr.substring(dataStr.indexOf("ExpTime: ") + 9, list.get(1)));
+		numImg = Integer.parseInt(dataStr.substring(dataStr.indexOf("NumOfImages: ") + 13, list.get(2)));	
+		
+		// print some information
+		cntSec = cnt*0.1;
+		mm.scripter().message("detected flag; counter: " + cntSec + "s; flag: " + flagLV + "; expTime: " + expTime + "; NumOfImages: " + numImg + ";");
+		
+		// set camera into external trigger mode and exposure time
+		camIntUM =  Double.parseDouble(mmc.getProperty("Andor sCMOS Camera", "Exposure"));
+
+		//mmc.setProperty("Camera", "Exposure", expTime);
+		mmc.setProperty("Andor sCMOS Camera", "Exposure", expTime);
+		//mmc.setProperty("Andor sCMOS Camera", "TriggerMode", "External");
+		
+		// start acquisition 
+		seq = mm.acquisitions().loadSequenceSettings(filePathSeq);
+		mm.acquisitions().runAcquisitionWithSettings(seq, true);
+
+		// update communication string so LabView is free to use again 
+      FileWriter fileWriter=new FileWriter(filePath);
+		fileWriter.write("Start: 0; ExpTime: 100; NumOfImages: 1;");
+		fileWriter.close();
+		flag = 1;
+		} else if(flagLV == 0) {
+		mm.scripter().message("waiting for flag; counter: " + cntSec + "s; flag: " + flagLV);
+		} else {
+		mm.scripter().message("no flagLV detected");	
+		}
+		// set camera into internal trigger mode and exposure time
+		mmc.setProperty("Andor sCMOS Camera", "Exposure", camIntUM);
+		//mmc.setProperty("Andor sCMOS Camera", "TriggerMode", "Internal (Recommended for fast acquisitions)");
+	}
+
+mm.scripter().message("script ended");
