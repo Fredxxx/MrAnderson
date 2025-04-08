@@ -118,7 +118,6 @@
 				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
-				<Item Name="convert Voltage Value.vi" Type="VI" URL="/&lt;userlib&gt;/er4commlib_labview/VIs/convert Voltage Value.vi"/>
 				<Item Name="read Data.vi" Type="VI" URL="/&lt;userlib&gt;/er4commlib_labview/VIs/read Data.vi"/>
 				<Item Name="get Queue Status.vi" Type="VI" URL="/&lt;userlib&gt;/er4commlib_labview/VIs/get Queue Status.vi"/>
 				<Item Name="convert Current Value.vi" Type="VI" URL="/&lt;userlib&gt;/er4commlib_labview/VIs/convert Current Value.vi"/>
