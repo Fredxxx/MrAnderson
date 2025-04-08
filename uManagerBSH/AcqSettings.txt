@@ -1,5 +1,5 @@
 {
-  "numFrames": 8,
+  "numFrames": 10,
   "intervalMs": 0.0,
   "displayTimeUnit": 0,
   "useCustomIntervals": false,
